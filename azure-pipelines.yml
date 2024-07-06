@@ -14,7 +14,8 @@ stages:
   - job: Build
     displayName: Build job
     pool:
-      name: 'MeSelfPool'
+      vmImage: 'ubuntu-20.04'
+      # name: 'MeSelfPool'
     steps:
     - task: DockerInstaller@0
       inputs:
